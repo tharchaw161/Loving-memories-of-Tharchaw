@@ -659,3 +659,41 @@ body {
     text-align: center;
     padding: 10px 0 0;
 }
+
+/* Memorial gallery improvements */
+[hidden] { display: none !important; }
+.featured-photo { display:block; width:clamp(150px, 30vw, 220px); height:clamp(150px, 30vw, 220px); object-fit:cover; border-radius:50%; margin:0 auto 28px; border:5px solid var(--cream); outline:1px solid var(--gold); outline-offset:7px; box-shadow:0 16px 40px var(--shadow); }
+.together-years { margin-top:16px; color:var(--gold-soft); font-size:15px; letter-spacing:1px; }
+.gallery-title { font-family:var(--font-display); font-weight:600; color:var(--gold-soft); font-size:clamp(22px, 4vw, 30px); margin-bottom:22px; }
+.gallery-filters { display:flex; justify-content:center; gap:10px; flex-wrap:wrap; }
+.gallery-filters button { min-height:44px; padding:10px 24px; border:1px solid var(--gold); border-radius:24px; background:transparent; color:var(--cream); font:inherit; cursor:pointer; }
+.gallery-filters button[aria-pressed="true"] { background:var(--gold-soft); color:var(--ink); }
+.gallery-filters button:focus-visible, .photo-open:focus-visible { outline:3px solid var(--gold); outline-offset:4px; }
+.gallery-status { color:var(--muted); font-size:13px; margin:16px 0 30px; }
+.photo-open { display:block; width:100%; padding:0; background:none; border:0; cursor:zoom-in; border-radius:2px; }
+.cat-card { opacity:1; }
+.cat-card video { object-fit:contain; background:#120f20; }
+.device-note { max-width:540px; margin:12px auto 20px; font-size:13px; line-height:1.65; color:var(--muted); text-align:center; }
+.guestbook-form label { font-size:14px; color:var(--cream); }
+.guestbook-form button { min-height:44px; }
+.guestbook-entry .message { overflow-wrap:anywhere; white-space:pre-wrap; }
+.viewer-open { overflow:hidden; }
+.lightbox { padding:70px 64px 32px; overflow-y:auto; }
+.lightbox-media { touch-action:pan-y pinch-zoom; flex-shrink:0; }
+.lightbox-close, .lightbox-nav { min-width:48px; min-height:48px; border-radius:50%; background:rgba(18,15,32,.85); }
+.lightbox-close { display:grid; place-items:center; }
+.photo-counter { color:var(--gold-soft); font-size:13px; letter-spacing:1px; margin-bottom:10px; }
+.lightbox-caption { flex-shrink:0; }
+@media (max-width:600px) {
+    .container { padding:42px 20px 60px; }
+    .hero { margin-bottom:38px; }
+    .card-grid { grid-template-columns:minmax(0,1fr); gap:26px; max-width:400px; }
+    .cat-card img, .cat-card video { height:260px; }
+    .lightbox { padding:68px 14px 90px; }
+    .lightbox-media, .lightbox-media img { max-width:100%; max-height:55dvh; }
+    .lightbox-nav { top:auto; bottom:20px; transform:none; font-size:36px; }
+    .lightbox-nav.prev { left:calc(50% - 65px); }
+    .lightbox-nav.next { right:calc(50% - 65px); }
+    .lightbox-caption p { font-size:14px; line-height:1.5; }
+    .login-container { width:min(340px, calc(100vw - 32px)); padding:36px 24px; }
+}

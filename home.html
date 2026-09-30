@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cat Memorial</title>
+    <title>Tharchaw — Loving Memories</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,600&family=Work+Sans:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -22,8 +22,10 @@
 <div class="container">
 
     <div class="hero">
+        <img class="featured-photo" src="images/cat1.jpg" alt="A favourite portrait of Tharchaw" fetchpriority="high">
         <span class="eyebrow">loving memories of</span>
         <h1>Tharchaw</h1>
+        <p class="together-years">Together, 2017–2025</p>
         <div class="divider"></div>
     </div>
 
@@ -33,11 +35,19 @@
         <p style="margin-top: 24px; color: var(--gold-soft); font-style: italic;">You came into my life unexpectedly, but you became family. Thank you for growing up beside me, waiting while I studied, sleeping near me, and filling my home with memories. Until we meet again. 🐾</p>
     </section>
 
+    <section class="gallery-section" aria-labelledby="gallery-title">
+    <h2 id="gallery-title" class="gallery-title">Little moments, forever memories</h2>
+    <div class="gallery-filters" role="group" aria-label="Filter memories" hidden>
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="photo" aria-pressed="false">Photos</button>
+        <button type="button" data-filter="video" aria-pressed="false">Videos</button>
+    </div>
+    <p class="gallery-status" id="galleryStatus" role="status"></p>
     <div class="card-grid">
 
         <!-- CAT CARD 1 -->
         <div class="cat-card">
-            <img src="images/cat1.jpg" alt="My Cat">
+            <img src="images/cat1.jpg" alt="Tharchaw — Those eyes" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Those eyes</h3>
                 <p>Always playful and full of love 💕</p>
@@ -46,7 +56,7 @@
 
         <!-- CAT CARD 2 -->
         <div class="cat-card">
-            <img src="images/cat2.jpg" alt="My Cat">
+            <img src="images/cat2.jpg" alt="Tharchaw — Sleeping Angel" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Sleeping Angel</h3>
                 <p>Peaceful moments I'll never forget 💤</p>
@@ -55,7 +65,7 @@
 
         <!-- CAT CARD 3 -->
         <div class="cat-card">
-            <img src="images/cat3.jpg" alt="My Cat">
+            <img src="images/cat3.jpg" alt="Tharchaw — Looking At Door" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Looking At Door</h3>
                 <p>Sitting on the bed ☀️</p>
@@ -64,7 +74,7 @@
 
         <!-- CAT CARD 4 -->
         <div class="cat-card">
-            <img src="images/cat4.jpg" alt="My Cat">
+            <img src="images/cat4.jpg" alt="Tharchaw — Evening time" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Evening time</h3>
                 <p>Sitting on the kitchen above plates ☀️</p>
@@ -73,7 +83,7 @@
 
         <!-- CAT CARD 5 -->
         <div class="cat-card">
-            <img src="images/cat5.jpg" alt="My Cat">
+            <img src="images/cat5.jpg" alt="Tharchaw — Evening time" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Evening time</h3>
                 <p>Relaxing on the sofa ☀️</p>
@@ -82,7 +92,7 @@
 
         <!-- CAT CARD 6-->
         <div class="cat-card">
-            <img src="images/cat6.jpg" alt="My Cat">
+            <img src="images/cat6.jpg" alt="Tharchaw — Morning time" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Morning time</h3>
                 <p>Sleeping on top of refrigerator ☀️</p>
@@ -91,7 +101,7 @@
 
         <!-- CAT CARD 7-->
         <div class="cat-card">
-            <img src="images/cat7.jpg" alt="My Cat">
+            <img src="images/cat7.jpg" alt="Tharchaw — Night time" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Night time</h3>
                 <p>Sleeping always near me when i was studying ☀️</p>
@@ -100,7 +110,7 @@
 
         <!-- CAT CARD 8-->
         <div class="cat-card">
-            <img src="images/cat8.jpg" alt="My Cat">
+            <img src="images/cat8.jpg" alt="Tharchaw — Night time" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Night time</h3>
                 <p>Looking at me while i was studying ☀️</p>
@@ -109,7 +119,7 @@
 
         <!-- CAT CARD 9-->
         <div class="cat-card">
-            <img src="images/cat9.jpg" alt="My Cat">
+            <img src="images/cat9.jpg" alt="Tharchaw — Night time" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Night time</h3>
                 <p>Sleeping on the corner of my bed look how cute he is 💕</p>
@@ -118,7 +128,7 @@
 
         <!-- CAT CARD 10-->
         <div class="cat-card">
-            <img src="images/cat10.jpg" alt="My Cat">
+            <img src="images/cat10.jpg" alt="Tharchaw — Night time" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Night time</h3>
                 <p>Always wait near me till i finish my study💕</p>
@@ -127,7 +137,7 @@
 
         <!-- CAT CARD 11 (VIDEO) -->
         <div class="cat-card">
-            <video controls>
+            <video controls playsinline preload="metadata">
             <source src="videos/cat11.mp4" type="video/mp4">
         Your browser does not support the video tag.
             </video>
@@ -139,7 +149,7 @@
 
         <!-- CAT CARD 12 (VIDEO) -->
         <div class="cat-card">
-            <video controls>
+            <video controls playsinline preload="metadata">
             <source src="videos/cat12.mp4" type="video/mp4">
         Your browser does not support the video tag.
             </video>
@@ -151,7 +161,7 @@
 
         <!-- CAT CARD 13-->
         <div class="cat-card">
-            <img src="images/cat11.jpeg" alt="My Cat">
+            <img src="images/cat11.jpeg" alt="Tharchaw — Feeling alone" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Feeling alone</h3>
                 <p>Watching something with full focus💕</p>
@@ -160,7 +170,7 @@
 
         <!-- CAT CARD 14-->
         <div class="cat-card">
-            <img src="images/cat12.jpg" alt="My Cat">
+            <img src="images/cat12.jpg" alt="Tharchaw — Waiting for me to sleep together" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Waiting for me to sleep together</h3>
                 <p>Again sleeping near me while i m studying💕</p>
@@ -169,7 +179,7 @@
 
          <!-- CAT CARD 15-->
         <div class="cat-card">
-            <img src="images/cat13.jpg" alt="My Cat">
+            <img src="images/cat13.jpg" alt="Tharchaw — Sleeping on the bed" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Sleeping on the bed</h3>
                 <p>Dreaming something💕</p>
@@ -178,7 +188,7 @@
 
         <!-- CAT CARD 16-->
         <div class="cat-card">
-            <img src="images/cat14.jpg" alt="My Cat">
+            <img src="images/cat14.jpg" alt="Tharchaw — He loves bicycle" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>He loves bicycle</h3>
                 <p>Giving pose on the bicycle💕</p>
@@ -187,7 +197,7 @@
 
          <!-- CAT CARD 17-->
         <div class="cat-card">
-            <img src="images/cat15.jpeg" alt="My Cat">
+            <img src="images/cat15.jpeg" alt="Tharchaw — He loves bicycle" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>He loves bicycle</h3>
                 <p>Looking at camera💕</p>
@@ -196,7 +206,7 @@
 
         <!-- CAT CARD 18-->
         <div class="cat-card">
-            <img src="images/cat16.jpeg" alt="My Cat">
+            <img src="images/cat16.jpeg" alt="Tharchaw — Innocent and Lovely" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Innocent and Lovely</h3>
                 <p>Looking at camera💕</p>
@@ -205,7 +215,7 @@
 
         <!-- CAT CARD 19-->
         <div class="cat-card">
-            <img src="images/cat17.jpeg" alt="My Cat">
+            <img src="images/cat17.jpeg" alt="Tharchaw — Glower Face" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Glower Face</h3>
                 <p>Looking at camera💕</p>
@@ -214,7 +224,7 @@
 
         <!-- CAT CARD 20-->
         <div class="cat-card">
-            <img src="images/cat18.jpg" alt="My Cat">
+            <img src="images/cat18.jpg" alt="Tharchaw — Sleeping on my hand" loading="lazy" decoding="async">
             <div class="card-content">
                 <h3>Sleeping on my hand</h3>
                 <p>Peacefully💕</p>
@@ -223,7 +233,7 @@
 
         <!-- CAT CARD 21 (VIDEO) -->
         <div class="cat-card">
-            <video controls>
+            <video controls playsinline preload="metadata">
             <source src="videos/cat13.mp4" type="video/mp4">
         Your browser does not support the video tag.
             </video>
@@ -235,6 +245,8 @@
 
     </div>
 
+    </section>
+
     <div class="dedication">
         always in my heart
         <span>Tharchaw</span>
@@ -243,33 +255,43 @@
     <div class="candle-shrine" id="candleShrine">
         <div class="flame" aria-hidden="true"></div>
         <button class="candle-btn" id="candleBtn">Light a candle for Tharchaw</button>
-        <span class="candle-count" id="candleCount"></span>
+        <span class="candle-count" id="candleCount" aria-live="polite"></span>
+        <p class="device-note">Your candle and count are saved only in this browser on this device.</p>
     </div>
 
     <section class="guestbook">
-        <h2>Leave a memory</h2>
-        <form class="guestbook-form" id="guestbookForm">
-            <input type="text" id="gbName" placeholder="Your name" required>
-            <textarea id="gbMessage" placeholder="Share a memory of Tharchaw..." required></textarea>
-            <button type="submit">Add memory</button>
+        <h2>Leave a memory for Tharchaw</h2>
+        <p class="device-note" id="guestbookNote">Share a memory with everyone who visits. Your name and message will be visible to other visitors and Tharchaw’s family.</p>
+        <p id="storageStatus" class="device-note" role="status"></p>
+        <form class="guestbook-form" id="guestbookForm" aria-describedby="guestbookNote">
+            <label for="gbName">Your name</label>
+            <input type="text" id="gbName" maxlength="80" placeholder="Your name" required>
+            <label for="gbMessage">Your memory</label>
+            <textarea id="gbMessage" maxlength="3000" placeholder="Share a memory of Tharchaw..." required></textarea>
+            <button type="submit">Share memory</button>
         </form>
+        <div class="guestbook-tools"><button type="button" id="refreshMemories">Refresh memories</button></div>
+        <p id="guestbookStatus" class="device-note" role="status" aria-live="polite"></p>
         <div class="guestbook-list" id="guestbookList"></div>
+        <button type="button" id="moreMemories" hidden>Load older memories</button>
     </section>
 
 </div>
 
 <!-- Lightbox for viewing photos larger -->
-<div class="lightbox" id="lightbox" aria-hidden="true">
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" aria-hidden="true" hidden>
     <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
     <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous photo">‹</button>
     <div class="lightbox-media" id="lightboxMedia"></div>
     <div class="lightbox-caption">
+        <p id="lightboxCounter" class="photo-counter" aria-live="polite"></p>
         <h3 id="lightboxTitle"></h3>
         <p id="lightboxDesc"></p>
     </div>
     <button class="lightbox-nav next" id="lightboxNext" aria-label="Next photo">›</button>
 </div>
 
+<script src="guestbook-config.js"></script>
 <script src="script.js"></script>
 
 </body>
