@@ -6,7 +6,7 @@
     <title>Tharchaw — Loving Memories</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,600&family=Work+Sans:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260930-2">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
 <div class="container">
 
     <div class="hero">
-        <img class="featured-photo" src="images/cat1.jpg" alt="A favourite portrait of Tharchaw" fetchpriority="high">
+        <img width="220" height="220" style="display:block;width:clamp(150px,30vw,220px);height:clamp(150px,30vw,220px);max-width:100%;object-fit:cover;border-radius:50%;margin:0 auto 28px;border:5px solid #f7f1e6;box-sizing:border-box;" class="featured-photo" src="images/cat1.jpg" alt="A favourite portrait of Tharchaw" fetchpriority="high">
         <span class="eyebrow">loving memories of</span>
         <h1>Tharchaw</h1>
         <p class="together-years">Together, 2017–2025</p>
@@ -256,14 +256,12 @@
         <div class="flame" aria-hidden="true"></div>
         <button class="candle-btn" id="candleBtn">Light a candle for Tharchaw</button>
         <span class="candle-count" id="candleCount" aria-live="polite"></span>
-        <p class="device-note">Your candle and count are saved only in this browser on this device.</p>
     </div>
 
     <section class="guestbook">
         <h2>Leave a memory for Tharchaw</h2>
-        <p class="device-note" id="guestbookNote">Share a memory with everyone who visits. Your name and message will be visible to other visitors and Tharchaw’s family.</p>
         <p id="storageStatus" class="device-note" role="status"></p>
-        <form class="guestbook-form" id="guestbookForm" aria-describedby="guestbookNote">
+        <form class="guestbook-form" id="guestbookForm">
             <label for="gbName">Your name</label>
             <input type="text" id="gbName" maxlength="80" placeholder="Your name" required>
             <label for="gbMessage">Your memory</label>
