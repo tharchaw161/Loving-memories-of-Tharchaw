@@ -697,3 +697,26 @@ body {
     .lightbox-caption p { font-size:14px; line-height:1.5; }
     .login-container { width:min(340px, calc(100vw - 32px)); padding:36px 24px; }
 }
+#refreshMemories {
+  display: block;
+  margin: 18px auto;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #e8bd7e, #e58fa2);
+  color: #2b2028;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#refreshMemories:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(232, 189, 126, 0.25);
+}
+
+#refreshMemories:focus-visible {
+  outline: 2px solid #f5d9a5;
+  outline-offset: 4px;
+}
